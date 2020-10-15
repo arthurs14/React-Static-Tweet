@@ -6,7 +6,7 @@ const tweetData = {
     name: 'Arthur Sandro'
   },
   likes: 2,
-  retweets: 0,
+  retweets: 3,
   timestamp: '2020-10-14 16:50:04',
 };
 

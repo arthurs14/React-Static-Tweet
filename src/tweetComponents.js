@@ -37,9 +37,17 @@ const Time = ({ time }) => {
   );
 };
 
-const LikeButton = () => {
+const LikeButton = ({ count }) => {
   return (
-    <i className="fa fa-heart like-button" />
+    <span className="like-button">
+      <i className="fa fa-heart" />
+      {
+        count > 0 &&
+        <span className="like-count">
+          {count}
+        </span>
+      }
+    </span>
   );
 };
 
@@ -49,9 +57,24 @@ const CommentButton = () => {
   );
 };
 
-const RetweetButton = () => {
+const getRetweetCount = (count) => {
+  if (count > 0) {
+    return (
+      <span className="retweet-count">
+        {count}
+      </span>
+    );
+  } else {
+    return null;
+  }
+}
+
+const RetweetButton = ({ count }) => {
   return (
-    <i className="fa fa-retweet retweet-button" />
+    <span className="retweet-button">
+      <i className="fa fa-retweet" />
+      { getRetweetCount(count)}
+    </span>
   );
 };
 

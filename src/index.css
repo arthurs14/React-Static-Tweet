@@ -47,3 +47,20 @@
 .buttons i {
   width: 80px;
 }
+
+.like-button,
+.retweet-button,
+.reply-button,
+.more-options-button {
+  width: 80px;
+  display: inline-block;
+}
+
+.like-count,
+.retweet-count {
+  position: relative;
+  bottom: 2px;
+  font-size: 13px;
+  margin-left: -50px;
+  font-weight: bold;
+}
