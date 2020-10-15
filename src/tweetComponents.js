@@ -57,23 +57,16 @@ const CommentButton = () => {
   );
 };
 
-const getRetweetCount = (count) => {
-  if (count > 0) {
-    return (
-      <span className="retweet-count">
-        {count}
-      </span>
-    );
-  } else {
-    return null;
-  }
-}
-
 const RetweetButton = ({ count }) => {
   return (
     <span className="retweet-button">
       <i className="fa fa-retweet" />
-      { getRetweetCount(count)}
+      {
+        count > 0 &&
+        <span className="retweet-count">
+          {count}
+        </span>
+      }
     </span>
   );
 };
