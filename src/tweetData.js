@@ -3,7 +3,7 @@ const tweetData = {
   gravatar: 'xyz',
   author: {
     handle: 'arthur14',
-    name: 'Arthur'
+    name: 'Arthur Sandro'
   },
   likes: 2,
   retweets: 0,

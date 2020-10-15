@@ -20,8 +20,8 @@ const Tweet = () => {
     <div className="tweet">
       <Avatar hash={gravatar} />
       <div className="content">
-        <NameWithHandle /><Time />
-        <Message />
+        <NameWithHandle author={author} /><Time time={timestamp} />
+        <Message message={message} />
         <div className="buttons">
           <LikeButton />
           <CommentButton />

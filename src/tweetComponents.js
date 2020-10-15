@@ -11,19 +11,20 @@ const Avatar = ({ hash }) => {
   );
 };
 
-const NameWithHandle = () => {
+const NameWithHandle = ({ author }) => {
+  const { handle, name } = author;
   return (
     <span className="name-with-handle">
-      <span className="name">Your Name</span>
-      <span className="name">@yourhandle</span>
+      <span className="name">{name}</span>
+      <span className="name">{`@${handle}`}</span>
     </span>
   );
 };
 
-const Message = () => {
+const Message = ({ message }) => {
   return (
     <div className="message">
-      This is less than 140 characters.
+      { message}
     </div>
   );
 };
