@@ -18,7 +18,7 @@ const Tweet = () => {
 
   return (
     <div className="tweet">
-      <Avatar />
+      <Avatar hash={gravatar} />
       <div className="content">
         <NameWithHandle /><Time />
         <Message />
