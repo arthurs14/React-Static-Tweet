@@ -23,9 +23,9 @@ const Tweet = () => {
         <NameWithHandle author={author} /><Time time={timestamp} />
         <Message message={message} />
         <div className="buttons">
-          <LikeButton />
+          <LikeButton count={likes} />
           <CommentButton />
-          <RetweetButton />
+          <RetweetButton count={retweets} />
           <ShareButton />
         </div>
       </div>

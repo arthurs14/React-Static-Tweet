@@ -7,7 +7,7 @@ const tweetData = {
   },
   likes: 2,
   retweets: 0,
-  timestamp: '2020-10-14 4:50:04',
+  timestamp: '2020-10-14 16:50:04',
 };
 
 export default tweetData;

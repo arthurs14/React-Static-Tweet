@@ -1,4 +1,5 @@
 import React from 'react';
+import moment from 'moment';
 
 const Avatar = ({ hash }) => {
   let url = `https://www.gravatar.com/avatar/${hash}`;
@@ -29,9 +30,10 @@ const Message = ({ message }) => {
   );
 };
 
-const Time = () => {
+const Time = ({ time }) => {
+  const timeString = moment(time).fromNow();
   return (
-    <span className="time">3h Ago</span>
+    <span className="time">{timeString}</span>
   );
 };
 
